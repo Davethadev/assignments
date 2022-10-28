@@ -1,0 +1,66 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    font-weight: 400;
+    width: 50%;
+    padding: 2.5rem;
+}
+
+.form-field {
+    padding-top: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 1rem;
+    width: 85%;
+    border-radius: 2px;
+}
+
+.terms {
+    display: flex;
+    padding: 1.5rem 0;
+    position: relative;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    top: 32.5%;
+    border-color: #E5E7EB;
+}
+
+.terms p {
+    width: 80%;
+    margin-left: 1.2rem;
+}
+
+.terms p a {
+    font-weight: 700;
+    color: black;
+}
+
+button {
+    border: none;
+    background-color: black;
+    color: #fff;
+    padding: 0.75rem 1.8rem;
+    font-weight: 700;
+    border-radius: 5px;
+    width: 100%;
+}

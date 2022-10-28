@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Registration Form</h1>
+    <p id="description">
+      We appreciate you registering with us
+    </p>
+    <p>
+        Already have an account? <a href="./login.html">Login</a>
+    </p>
+    <form id="registration-form">
+      <label id="first-name-label"
+        >First name
+        <input id="first-name" type="text" placeholder="Enter your first name" required name="first-name"
+      /></label>
+      <label id="last-name-label"
+        >Last name
+        <input id="last-name" type="text" placeholder="Enter your last name" required name="last-name"
+      /></label>
+      <label id="phone-number-label"
+        >Phone number
+        <input id="phone-number" type="tel" placeholder="Enter your phone number" required name="phone-number"
+      /></label>
+      <label id="email-label"
+        >Email
+        <input id="email" placeholder="Enter your email" required type="email" name="email"
+      /></label>
+      <label for="gender" name="gender"
+        >Gender
+        <select id="dropdown">
+          <option>select gender</option>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </label>
+      <label id="date-of-birth-label"
+        >Date of birth
+        <input id="date-of-birth" required type="date" name="date-of-birth"
+      /></label>
+      <label id="favorite-color-label"
+        >Favorite-color
+        <input id="favorite-color" placeholder="Enter your favorite color" required type="color" name="favorite-color"
+      /></label>
+      <input id="submit" type="submit" />
+    </form>
+  </body>
+</html>
+
