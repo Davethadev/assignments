@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', serif;
+    background-color: hsl(218, 28%, 13%);
+}
+
+.header {
+    height: auto;
+}
+
+.header-nav {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+}
+
+.button {
+    display: block;
+    width: 8.5rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 0.75rem 1rem;
+    color: #000;
+    background-color: yellow;
+    font-size: 1rem;
+}
+
+.header-links a {
+    font-weight: 400;
+    text-decoration: none;
+    color: hsl(0, 0%, 60%);
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    transition: 0.25s ease-in-out;
+}
+
+.header-links a:hover {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.header-links-mobile {
+    display: none;
+}
+
+.hamburger-icon {
+    display: none;
+}
+
+.header-text-avatar-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 60%; */
+    padding-top: 3.5rem;
+}
+
+.header-text-content {
+    width: 60%;
+}
+
+.avatar {
+    width: 40%;
+    height: auto;
+}
+
+.avatar img {
+    width: 100%;
+}
+
+.header-text-avatar-wrapper h1 {
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    font-size: 3rem;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+.header-text-avatar-wrapper .header-text-content p {
+    font-weight: 400;
+    color: hsl(0, 0%, 60%);
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    width: 85%;
+    line-height: 1.4;
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.logos-section-content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 4.5rem 0 4rem;
+}
+
+.logos-section-mobile {
+    display: none;
+}
+
+#work h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 400;
+    padding: 2rem 0 3.5rem;
+    color: #fff;
+}
+
+.work-content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work-tile {
+    width: 45%;
+}
+
+.work-tile a {
+    text-decoration: none;
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+    font-size: 2.2rem;
+}
+
+.work-tile p {
+    font-weight: 400;
+    color: hsl(0, 0%, 60%);
+    padding: 1rem 0 3.5rem;
+    font-size: 1.2rem;
+}
+
+.work-tile p a {
+    font-size: 1.2rem;
+}
+
+.work-tile img {
+    width: 100%;
+    margin-bottom: 1.2rem;
+}
+
+#about {
+    background-color: hsl(214, 17%, 51%);
+    width: 100%;
+    padding: 2rem 0;
+}
+
+#about .about-content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 24rem;
+}
+
+#about .about-content h2 {
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+    width: 25rem;
+    font-size: 1.6rem;
+}
+
+#about .about-content p {
+    font-weight: 400;
+    color: hsl(0, 0%, 85%);
+    width: 25rem;
+    font-size: 1.2rem;
+    padding-top: 1.2rem;
+    line-height: 1.2;
+}
+
+#contact-me {
+    padding: 2rem 0;
+}
+
+.contact-me-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#contact-me h2 {
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    font-size: 2rem;
+}
+
+#contact-me p {
+    font-weight: 400;
+    color: hsl(0, 0%, 60%);
+    width: 28rem;
+    font-size: 1.2rem;
+    padding-top: 0.75rem;
+    line-height: 1.25;
+}
+
+#contact-me .button {
+    display: block;
+    margin: 1rem 0 3.5rem;
+}
+
+footer {
+    background-color: hsl(214, 17%, 51%);
+}
+
+.footer-content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.social-icons img {
+    margin-left: 1rem;
+}
+
+@media(max-width: 900px) {
+
+    main {
+        width: 100%;
+    }
+
+    .header {
+        position: relative;
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    .header-nav {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .header-text-avatar-wrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header-text-content {
+        width: 100%;
+        padding: 0 1rem;
+        order: 2;
+    }
+
+    .avatar {
+        animation: slide-in;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in-out;
+        animation-direction: reverse;
+    }
+
+    @keyframes slide-in {
+        100% {transform: translateX(600px);}
+    }
+
+    .avatar {
+        width: 100%;
+        order: 1;
+        margin-bottom: 2.5rem;
+    }
+
+    .avatar img {
+        width: 100%;
+    }
+
+    .header-text-content h1 {
+        font-size: 2rem;
+    }
+
+    .header-text-avatar-wrapper .header-text-content p {
+        width: 100%;
+        line-height: 1.4;
+        font-size: 1.2rem;
+    }
+
+    .header-links {
+        display: none;
+    }
+
+    .header-nav .button {
+        display: none;
+    }
+
+    .header-links-mobile {
+        display: block;
+    }
+
+    .header-links-mobile {
+        font-weight: 400;
+        width: 100%;
+        opacity: 0;
+        text-align: center;
+        padding: 2rem 0;
+        position: absolute;
+        z-index: 1;
+        background-color: #000;
+        height: 100vh;
+        transform: translateX(-500px);
+        transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+    }
+
+    .header-links-mobile a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: hsl(0, 0%, 100%);
+        margin-bottom: 1rem;
+    }
+
+    .header-links-mobile .button {
+        width: 45%;
+        margin: 1rem auto 0;
+        color: #000;
+    }
+
+    .header-links-mobile.active {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .header-links-mobile * {
+        display: block;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+
+    .logos-section-content {
+        display: none;
+    }
+
+    .logos-section-mobile {
+        display: block;
+        margin: 3.5rem 0;
+    }
+
+    .logos-section-mobile div {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 1.5rem;
+    }
+
+    #work {
+        margin-top: 4.5rem;
+    }
+
+    #work h2 {
+        font-size: 1.6rem;
+    }
+
+    .work-content {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .work-tile {
+        width: 100%;
+    }
+
+    .work-tile a {
+        font-size: 1.4rem;
+    }
+
+    .work-tile img {
+        width: 100%;
+    }
+
+    #about .about-content {
+        width: 100%;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    #about .about-content h2 {
+        width: 100%;
+    }
+    
+    #about .about-content p {
+        width: 100%;
+    }
+    
+    #contact-me .contact-me-content p {
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    #contact-me .contact-me-content .button {
+        width: 45%;
+    }
+
+    .footer-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+}

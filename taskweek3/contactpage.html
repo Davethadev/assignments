@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <style>
+        body {
+            background-color: hsl(218, 28%, 13%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+
+        form {
+            position: relative;
+            width: 50%;
+            height: auto;
+            margin: 0 auto;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+
+        form > div {
+            margin: 1.5rem 0;
+        }
+
+        input, textarea {
+            font: 1.2rem 'Open Sans', sans-serif;
+            border: none;
+            padding: 10px;
+            margin: 0;
+            width: 100%;
+            background: white;
+        }
+
+        input:focus, textarea:focus {
+            border-radius: 5px;
+        }
+
+        h1 {
+            font: 1em 'Open Sans', serif;
+        }
+
+        label {
+            display: block;
+            padding: 1rem 0;
+            font-size: 1.2rem;
+        }
+
+        textarea {
+            display: block;
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            height: 90%;
+            border-right: 1px solid;
+            overflow: auto;
+        }
+
+        button {
+            margin: 1rem 0;
+            color: #fff;
+            padding: 10px;
+            font: bold 1.2 sans-serif;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            background: none;
+            cursor: pointer;
+            transform: rotate(-1.5deg);
+        }
+    </style>
+</head>
+<body>
+    <form>
+        
+        <div id="from">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name">
+        </div>
+        
+        <div id="reply">
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email">
+        </div>
+        
+        <div id="message">
+            <label for="msg">Your message:</label>
+            <textarea id="msg" name="user_message" rows="6"></textarea>
+        </div>
+        
+        <div class="button">
+            <button type="submit">Send your message</button>
+        </div>
+    </form>
+</body>
+</html>
